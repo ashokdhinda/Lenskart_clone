@@ -17,7 +17,7 @@ import { NavLink } from "react-router-dom";
   import { AiOutlineRight } from "react-icons/ai";
 const DropDownNav = () => {
   const [hoverOne,setHoverOne]= useState(false)
-  // const [hoverTwo , setHoverTwo] = useState(false)
+  const [hoverTwo , setHoverTwo] = useState(false)
   // const [hoverThree, setHoverThree] = useState(false)
   // const [hoverFour , setHoverFour] = useState(false)
   // cont[hoverFive, setHoverFive] = useState(false)
@@ -30,10 +30,12 @@ const DropDownNav = () => {
   const isHoverOneFalse = () => {
     setHoverOne(false)
   }
-  // const isHoverTwoTrue = () => {
-  //   setHoverTwo(true)
-  // }
-  // const isHOver
+  const isHoverTwoTrue = () => {
+    setHoverTwo(true)
+  }
+  const isHoverTwoFalse = () => {
+    setHoverTwo(false)
+  }
   return (
     <Flex>
       <Flex>
@@ -423,6 +425,124 @@ const DropDownNav = () => {
                         Garage Door & Opener Installation
                       </Text>
                     </SimpleGrid>
+                  </SimpleGrid>
+                </SimpleGrid>
+              </SimpleGrid>
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
+        <Popover
+          isOpen={hoverTwo}
+          onClose={() => setHoverTwo(false)}
+          onOpen={() => setHoverTwo(true)}
+        >
+          <PopoverTrigger>
+            <Button
+              pt={"5"}
+              pr={"1"}
+              pb={5}
+              bg={"#FBF9F7"}
+              _hover={{ borderBottom: "2px solid blue" }}
+              borderRadius={"none"}
+              onMouseEnter={isHoverTwoTrue}
+              onMouseLeave={isHoverTwoFalse}
+            >
+              {" "}
+              COMPUTER GLASSES
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent
+            w={"1100px"}
+            onMouseEnter={isHoverTwoTrue}
+            onMouseLeave={isHoverTwoFalse}
+          >
+            <PopoverBody>
+              <SimpleGrid
+                gridTemplateColumns={"repeat(2,1fr)"}
+                gap={3}
+                color={"61608B"}
+                alignItems={"start"}
+              >
+                <SimpleGrid>
+                  <SimpleGrid gap={3}>
+                    <Text fontSize={"1.2rem"} color={"black"} ml={40}>
+                      SELECT CATEGORY
+                    </Text>
+                    <NavLink to={""}>
+                      <Flex gap={3} ml={40}>
+                        <Avatar
+                          m="20px"
+                          name="Dan Abrahmov"
+                          src="https://static.lenskart.com/media/desktop/img/men_pic.png"
+                          alt="men"
+                        />
+                        <Box mt={7}>Men</Box>
+                        <Box mt={"8"}>
+                          <AiOutlineRight size="10px" />
+                        </Box>
+                        <Box mt={4} w={"160px"}>
+                          {" "}
+                          CLASSIC EYE-GLASSES{" "}
+                          <Text>
+                            Starting From ₹ <span>500</span>
+                          </Text>
+                        </Box>
+                        <Box mt={8}>
+                          <AiOutlineRight size="10px" />
+                        </Box>
+                      </Flex>
+                    </NavLink>
+                    <NavLink>
+                      <Flex gap={2} ml={40}>
+                        <Avatar
+                          ml="20px"
+                          name="Kola Tioluwani"
+                          src="https://static.lenskart.com/media/desktop/img/women_pic.png"
+                          alt="women"
+                        />
+                        <Box mt={3} ml={3}>
+                          Women
+                        </Box>
+                        <Box mt={5}>
+                          <AiOutlineRight size="10px" />
+                        </Box>
+                        <Box mt={1}>
+                          CLASSIC EYE-GLASSES
+                          <Text>
+                            Starting From ₹ <span>1200</span>
+                          </Text>
+                        </Box>
+                        <Box mt={5}>
+                          <AiOutlineRight size="10px" />
+                        </Box>
+                      </Flex>
+                    </NavLink>
+                    <NavLink>
+                      <Flex gap={2} ml={40}>
+                        <Avatar
+                          ml="20px"
+                          mt={2}
+                          name="Kent Dodds"
+                          src="https://static.lenskart.com/media/desktop/img/kid_pic.png"
+                          alt="kid"
+                        />
+                        <Box mt={5} ml={5}>
+                          Kids
+                        </Box>
+                        <Box mt={7} ml={3}>
+                          <AiOutlineRight size="10px" />
+                        </Box>
+                        <Box mt={1} ml={3} w={"160px"}>
+                          CLASSIC EYE-GLASSES
+                          <Text>
+                            Starting From ₹ <span>600</span>
+                          </Text>
+                        </Box>
+                        <Box mt={5}>
+                          <AiOutlineRight size="10px" />
+                        </Box>
+                      </Flex>
+                    </NavLink>
                   </SimpleGrid>
                 </SimpleGrid>
               </SimpleGrid>
