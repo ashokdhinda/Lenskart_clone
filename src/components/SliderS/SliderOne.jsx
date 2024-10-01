@@ -105,7 +105,7 @@ const SliderOne = () => {
     "https://static1.lenskart.com/media/desktop/img/republic/hustlr-ace/Hustlr_Ace_Desktop_Banner.gif",
     "https://static1.lenskart.com/media/desktop/img/2024/feb/IN/tentpole/web%20banner.jpg",
     "https://static1.lenskart.com/media/desktop/img/2024/feb/IN/Sobhita/Desktop.png",
-    "https://static5.lenskart.com/media/uploads/webFloat_POP2124.jpg",
+    "https://static5.lenskart.com/media/uploads/webFloat_POP2124.jpg",``
   ];
 
   return (
