@@ -66,7 +66,7 @@ const SliderTwo = () => {
     infinite: true,
     speed: 200,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 2,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     dots: true,
