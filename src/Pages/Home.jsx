@@ -4,6 +4,8 @@ import { Box, Flex, Image,SimpleGrid,Text } from "@chakra-ui/react";
 import SliderOne from '../components/SliderS/SliderOne';
 import SliderTwo from '../components/SliderS/SliderTwo';
 import { Link } from 'react-router-dom';
+import SliderThree from '../components/SliderS/SliderThree';
+import SliderFour from '../components/SliderS/SliderFour';
 
 const Home = () => {
   
@@ -285,6 +287,157 @@ const Home = () => {
             alt="stores"
           />
         </SimpleGrid>
+        <Box
+          textAlign={{ base: "center", md: "center" }}
+          m={2}
+          fontFamily={"sans-serif"}
+        >
+          <Text as="h3" size="lg" fontSize={[15, 15, 20, 25]}>
+            {windowWidth <= 768
+              ? "--- OUR BRANDS---"
+              : "_______________________OUR BRANDS _________________________"}
+          </Text>
+        </Box>
+
+        <Box p={1}>
+          <img
+            src=" https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/VC-Banner.jpg"
+            alt="OUR BRANDS"
+          />
+        </Box>
+
+        <Flex w={"80%"} justifyContent={"space-between"} m={"auto"} mb={0}>
+          <Box
+            textAlign={{ base: "center", md: "center" }}
+            m={2}
+            fontFamily={"sans-serif"}
+          >
+            <Text mb={-4} as="h3" size="lg" fontSize={[15, 15, 20, 25]}>
+              {windowWidth <= 768 ? "EYEGLASSES" : " EYEGLASSES  "}
+            </Text>
+          </Box>
+          <Box cursor={"pointer"}>
+            <Text
+              as="h3"
+              size="lg"
+              mt={2}
+              fontSize={[11, 9, 14, 19]}
+              color={"darkcyan"}
+            >
+              View Range
+            </Text>
+          </Box>
+        </Flex>
+        <Box mt={0} textAlign={"center"}>
+          <Text mt={-2} as="h3" size="lg" fontSize={[15, 15, 20, 25]}>
+            {windowWidth <= 768
+              ? "_______________________________________________________"
+              : "____________________________________________________________________________________________"}
+          </Text>
+        </Box>
+        <SliderThree />
+        <Flex w={"80%"} justifyContent={"space-between"} m={"auto"} mb={0}>
+          <Box
+            textAlign={{ base: "center", md: "center" }}
+            m={2}
+            fontFamily={"sans-serif"}
+          >
+            <Text mb={-4} as="h3" size="lg" fontSize={[15, 15, 20, 25]}>
+              {windowWidth <= 768 ? "SUNGLASSES" : " SUNGLASSES  "}
+            </Text>
+          </Box>
+          <Box cursor={"pointer"}>
+            <Text
+              as="h3"
+              size="lg"
+              mt={2}
+              fontSize={[11, 9, 14, 19]}
+              color={"darkcyan"}
+            >
+              View Range
+            </Text>
+          </Box>
+        </Flex>
+        <Box mt={0} textAlign={"center"}>
+          <Text mt={-2} as="h3" size="lg" fontSize={[15, 15, 20, 25]}>
+            {windowWidth <= 768
+              ? "_______________________________________________________"
+              : "____________________________________________________________________________________________"}
+          </Text>
+        </Box>
+        <SliderFour />
+        <Box p={1}>
+          <img
+            src=" https://static1.lenskart.com/media/desktop/img/Nov22/Updated%20brand%20banner%20jj%20.jpg "
+            alt="OUR BRANDS"
+          />
+        </Box>
+        <Flex w={"80%"} justifyContent={"space-between"} m={"auto"} mb={0}>
+          <Box
+            textAlign={{ base: "center", md: "center" }}
+            m={2}
+            fontFamily={"sans-serif"}
+          >
+            <Text mb={-4} as="h3" size="lg" fontSize={[15, 15, 20, 25]}>
+              {windowWidth <= 768 ? "EYEGLASSES" : " EYEGLASSES  "}
+            </Text>
+          </Box>
+          <Box cursor={"pointer"}>
+            <Text
+              as="h3"
+              size="lg"
+              mt={2}
+              fontSize={[11, 9, 14, 19]}
+              color={"darkcyan"}
+            >
+              View Range
+            </Text>
+          </Box>
+        </Flex>
+        <Box mt={0} textAlign={"center"}>
+          <Text mt={-2} as="h3" size="lg" fontSize={[15, 15, 20, 25]}>
+            {windowWidth <= 768
+              ? "_______________________________________________________"
+              : "____________________________________________________________________________________________"}
+          </Text>
+        </Box>
+        <SliderThree />
+        <Flex w={"80%"} justifyContent={"space-between"} m={"auto"} mb={0}>
+          <Box
+            textAlign={{ base: "center", md: "center" }}
+            m={2}
+            fontFamily={"sans-serif"}
+          >
+            <Text mb={-4} as="h3" size="lg" fontSize={[15, 15, 20, 25]}>
+              {windowWidth <= 768 ? "SUNGLASSES" : " SUNGLASSES  "}
+            </Text>
+          </Box>
+          <Box cursor={"pointer"}>
+            <Text
+              as="h3"
+              size="lg"
+              mt={2}
+              fontSize={[11, 9, 14, 19]}
+              color={"darkcyan"}
+            >
+              View Range
+            </Text>
+          </Box>
+        </Flex>
+        <Box mt={0} textAlign={"center"}>
+          <Text mt={-2} as="h3" size="lg" fontSize={[15, 15, 20, 25]}>
+            {windowWidth <= 768
+              ? "_______________________________________________________"
+              : "____________________________________________________________________________________________"}
+          </Text>
+        </Box>
+        <SliderFour />
+        <Box p={1}>
+          <img
+            src=" https://static1.lenskart.com/media/desktop/img/Aug21/25-Aug/LK-Readers-Banner.jpg "
+            alt="OUR BRANDS"
+          />
+        </Box>
       </Box>
     </>
   );
