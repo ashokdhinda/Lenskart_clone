@@ -6,6 +6,7 @@ import SliderTwo from '../components/SliderS/SliderTwo';
 import { Link } from 'react-router-dom';
 import SliderThree from '../components/SliderS/SliderThree';
 import SliderFour from '../components/SliderS/SliderFour';
+import SliderFive from '../components/SliderS/SliderFive';
 
 const Home = () => {
   
@@ -438,6 +439,36 @@ const Home = () => {
             alt="OUR BRANDS"
           />
         </Box>
+        <Flex w={"80%"} justifyContent={"space-between"} m={"auto"} mb={0}>
+          <Box
+            textAlign={{ base: "center", md: "center" }}
+            m={2}
+            fontFamily={"sans-serif"}
+          >
+            <Text mb={-4} as="h3" size="lg" fontSize={[15, 15, 20, 25]}>
+              {windowWidth <= 768 ? "CONTACT LENSES" : " CONTACT LENSES "}
+            </Text>
+          </Box>
+          <Box cursor={"pointer"}>
+            <Text
+              as="h3"
+              size="lg"
+              mt={2}
+              fontSize={[11, 9, 14, 19]}
+              color={"darkcyan"}
+            >
+              View Range
+            </Text>
+          </Box>
+        </Flex>
+        <Box mt={0} textAlign={"center"}>
+          <Text mt={-2} as="h3" size="lg" fontSize={[15, 15, 20, 25]}>
+            {windowWidth <= 768
+              ? "_____________________________________________________"
+              : "___________________________________________________________________________________________ "}
+          </Text>
+        </Box>
+        <SliderFive/>
       </Box>
     </>
   );
