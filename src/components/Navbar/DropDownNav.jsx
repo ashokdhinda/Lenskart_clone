@@ -20,7 +20,7 @@ const DropDownNav = () => {
   const [hoverOne,setHoverOne]= useState(false)
   const [hoverTwo , setHoverTwo] = useState(false)
   const [hoverThree, setHoverThree] = useState(false)
-  // const [hoverFour , setHoverFour] = useState(false)
+  const [hoverFour , setHoverFour] = useState(false)
   // cont[hoverFive, setHoverFive] = useState(false)
   
   // const [hoverSix,setHoverSix] = useState(false)
@@ -45,6 +45,14 @@ const DropDownNav = () => {
   const isHoverThreeFalse = () => {
     setHoverThree(false)
   }
+
+  const isHoverFourTrue = () => {
+    setHoverFour(true)
+
+  }
+  const isHoverFourFalse = () => {
+  setHoverFour(false)
+}
   return (
     <Flex>
       <Flex>
@@ -616,6 +624,273 @@ const DropDownNav = () => {
                     EyeGlassess
                   </Text>
                 </NavLink>
+              </Flex>
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
+
+        <Popover
+          isOpen={hoverFour}
+          onClose={() => setHoverFour(false)}
+          onOpen={() => setHoverFour(true)}
+        >
+          <PopoverTrigger>
+            <Button
+              onMouseEnter={isHoverFourTrue}
+              onMouseLeave={isHoverFourFalse}
+              pt={"5"}
+              pr={"1"}
+              pb={5}
+              color={"020043"}
+              bg={"#FBF9F7"}
+              _hover={{ borderBottom: "2px solid blue" }}
+              borderRadius={"none"}
+            >
+              CONTACT LENSES
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent
+            w={"1200px"}
+            h={"400px"}
+            onMouseEnter={isHoverFourTrue}
+            onMouseLeave={isHoverFourFalse}
+          >
+            <PopoverBody>
+              <Flex justifyContent={"space-around"}>
+                <SimpleGrid gap={4}>
+                  <Text fontSize={"1.3rem"} color={"black"}>
+                    Brands
+                  </Text>
+                  <SimpleGrid gap={3}>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      Aqualens
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      Bausch Lomb
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      {" "}
+                      Soflens
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      {" "}
+                      Acuvue
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      Iconnect
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      Alcon
+                    </Text>
+                  </SimpleGrid>
+                </SimpleGrid>
+                <SimpleGrid gap={3}>
+                  <Text fontSize={"1.3rem"} color={"black"}>
+                    Explore By Disposablity
+                  </Text>
+                  <SimpleGrid gap={3}>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      Monthly
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      {" "}
+                      Day & Night
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      {" "}
+                      Daily
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      Yearly
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      {" "}
+                      Bi-weekly
+                    </Text>
+                  </SimpleGrid>
+                </SimpleGrid>
+                <SimpleGrid gap={3}>
+                  <Text fontSize={"1.3rem"} color={"black"}>
+                    Explore By Power
+                  </Text>
+                  <SimpleGrid gap={3}>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      Spherical - (CYL-0.5){" "}
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      {" "}
+                      Spherical + (CYL-0.5)
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      {" "}
+                      Cylindrical Power(+0.75)
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      {" "}
+                      Toric Power
+                    </Text>
+                  </SimpleGrid>
+                </SimpleGrid>
+
+                <SimpleGrid gap={3}>
+                  <Text fontSize={"1.3rem"} color={"black"}>
+                    Explore By Color
+                  </Text>
+                  <SimpleGrid gap={3}>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      {" "}
+                      Green{" "}
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      Black
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      Blue
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      {" "}
+                      Turquoise
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      {" "}
+                      View all colors
+                    </Text>
+                  </SimpleGrid>
+                </SimpleGrid>
+
+                <SimpleGrid gap={3}>
+                  <Text fontSize={"1.3rem"} color={"black"}>
+                    Solution
+                  </Text>
+                  <SimpleGrid gap={3}>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      Small{" "}
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      {" "}
+                      Large
+                    </Text>
+                    <Text
+                      fontSize={"small"}
+                      color="gray"
+                      _hover={{ color: "black" }}
+                      transition="color 0.1s"
+                    >
+                      {" "}
+                      View all solutions
+                    </Text>
+                  </SimpleGrid>
+                </SimpleGrid>
               </Flex>
             </PopoverBody>
           </PopoverContent>
