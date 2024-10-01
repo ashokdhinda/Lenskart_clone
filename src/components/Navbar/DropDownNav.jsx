@@ -3,6 +3,7 @@ import {
   Avatar,
   Box,
   Button,
+  Center,
   Flex,
   Heading,
   Image,
@@ -18,7 +19,7 @@ import { NavLink } from "react-router-dom";
 const DropDownNav = () => {
   const [hoverOne,setHoverOne]= useState(false)
   const [hoverTwo , setHoverTwo] = useState(false)
-  // const [hoverThree, setHoverThree] = useState(false)
+  const [hoverThree, setHoverThree] = useState(false)
   // const [hoverFour , setHoverFour] = useState(false)
   // cont[hoverFive, setHoverFive] = useState(false)
   
@@ -35,6 +36,14 @@ const DropDownNav = () => {
   }
   const isHoverTwoFalse = () => {
     setHoverTwo(false)
+  }
+
+  const isHoverThreeTrue = () => {
+    setHoverThree(true)
+  }
+
+  const isHoverThreeFalse = () => {
+    setHoverThree(false)
   }
   return (
     <Flex>
@@ -546,6 +555,68 @@ const DropDownNav = () => {
                   </SimpleGrid>
                 </SimpleGrid>
               </SimpleGrid>
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
+
+        <Popover
+          isOpen={hoverThree}
+          onClose={() => setHoverThree(false)}
+          onOpen={() => setHoverThree(true)}
+        >
+          <PopoverTrigger>
+            <Button
+              onMouseEnter={isHoverThreeTrue}
+              onMouseLeave={isHoverThreeFalse}
+              pt={"5"}
+              pr={"1"}
+              pb={5}
+              bg={"#FBF9F7"}
+              _hover={{ borderBottom: "2px solid blue" }}
+              borderRadius={"none"}
+            >
+              KIDS GLASSES
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent
+            w={"900px"}
+            h={"400px"}
+            onMouseEnter={isHoverThreeTrue}
+            onMouseLeave={isHoverThreeFalse}
+          >
+            <PopoverBody>
+              <Flex gap={40} justifyContent={"Center"} mt={57} ml={70}>
+                <NavLink to={"/kidsunglassess"}>
+                  <Image
+                    className="img_1"
+                    src="https://static1.lenskart.com/media/desktop/img/May22/glasses.jpg"
+                    alt="kidsIcon_1"
+                  />
+                  <Text as={"b"} ml={6}>
+                    EyeGlassess
+                  </Text>
+                </NavLink>
+                <NavLink to={""}>
+                  <Image
+                    className="img_2"
+                    src="https://static1.lenskart.com/media/desktop/img/May22/computer-glasses.jpg"
+                    alt="kidsIcon_2"
+                  />
+                  <Text as={"b"} ml={6}>
+                    EyeGlassess
+                  </Text>
+                </NavLink>
+                <NavLink to={""}>
+                  <Image
+                    className="img_3"
+                    src="https://static1.lenskart.com/media/desktop/img/May22/Sunnies.jpg"
+                    alt="kidsIcon_3"
+                  />
+                  <Text as={"b"} ml={6}>
+                    EyeGlassess
+                  </Text>
+                </NavLink>
+              </Flex>
             </PopoverBody>
           </PopoverContent>
         </Popover>
