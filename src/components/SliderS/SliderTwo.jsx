@@ -43,7 +43,7 @@ export function SamplePrevArrow(props) {
       width="50px"
       height="50px"
       position="absolute"
-      left="20px" // Corrected from 'right' to 'left'
+      left="20px"
       top="50%"
       transform="translateY(-50%)"
       zIndex="1"
@@ -65,7 +65,7 @@ const SliderTwo = () => {
     autoplaySpeed: 2000,
     infinite: true,
     speed: 200,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 3,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -74,7 +74,7 @@ const SliderTwo = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2, // Adjusted for better visibility on smaller screens
+          slidesToShow: 2, 
           slidesToScroll: 1,
           arrows: false,
           dots: true,
@@ -147,7 +147,7 @@ const SliderTwo = () => {
           return (
             <Box
               textAlign={"center"}
-              key={ele.img} // Using image URL as key
+              key={ele.img} 
               padding={2}
             >
               <Box
