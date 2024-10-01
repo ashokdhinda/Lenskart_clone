@@ -21,7 +21,7 @@ const DropDownNav = () => {
   const [hoverTwo , setHoverTwo] = useState(false)
   const [hoverThree, setHoverThree] = useState(false)
   const [hoverFour , setHoverFour] = useState(false)
-  // cont[hoverFive, setHoverFive] = useState(false)
+  const[hoverFive, setHoverFive] = useState(false)
   
   // const [hoverSix,setHoverSix] = useState(false)
   // const [hoverSeven, setHoverSeven] = useState(false)
@@ -52,7 +52,14 @@ const DropDownNav = () => {
   }
   const isHoverFourFalse = () => {
   setHoverFour(false)
-}
+  }
+  
+  const isHoverFiveTrue = () => {
+    setHoverFive(true)
+  }
+  const isHoverFiveFalse = () => {
+    setHoverFive(false)
+  }
   return (
     <Flex>
       <Flex>
@@ -895,6 +902,229 @@ const DropDownNav = () => {
             </PopoverBody>
           </PopoverContent>
         </Popover>
+
+        <Popover
+          isOpen={hoverFive}
+          onClose={() => setHoverFive(false)}
+          onOpen={() => setHoverFive(true)}
+        >
+          <PopoverTrigger>
+            <Button
+              onMouseEnter={isHoverFiveTrue}
+              onMouseLeave={isHoverFiveFalse}
+              pt={"5"}
+              pr={"1"}
+              pb={5}
+              bg={"#FBF9F7"}
+              _hover={{ borderBottom: "2px solid blue" }}
+              borderRadius={"none"}
+            >
+              {" "}
+              SUNGLASSES
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent
+            w={"1200px"}
+            h={"480ox"}
+            onMouseEnter={isHoverFiveTrue}
+            onMouseLeave={isHoverFiveFalse}
+          >
+            <PopoverBody>
+              <Flex gap={10}>
+                <SimpleGrid gap={3}>
+                  <Text fontSize={"1rem"} color={"black"} ml={40}>
+                    SELECT CATEGORY
+                  </Text>
+                  <NavLink to={"/mensunglassess"}>
+                    <Flex gap={3} ml={10}>
+                      <Avatar
+                        m="20px"
+                        name="Dan Abrahmov"
+                        src="https://static.lenskart.com/media/desktop/img/men_pic.png"
+                        alt="men"
+                      />
+                      <Box mt={7}>Men</Box>
+                      <Box mt={"8"}>
+                        <AiOutlineRight size="10px" />
+                      </Box>
+                      <Box mt={4} w={"160px"}>
+                        {" "}
+                        CLASSIC EYE-GLASSES{" "}
+                        <Text>
+                          Starting From ₹ <span>1000</span>
+                        </Text>
+                      </Box>
+                      <Box mt={8}>
+                        <AiOutlineRight size="10px" />
+                      </Box>
+                    </Flex>
+                  </NavLink>
+                  <NavLink to={"/womensunglassess"}>
+                    <Flex gap={2} ml={10}>
+                      <Avatar
+                        ml="20px"
+                        name="Kola Tioluwani"
+                        src="https://static.lenskart.com/media/desktop/img/women_pic.png"
+                        alt="women"
+                      />
+                      <Box mt={3} ml={3}>
+                        Women
+                      </Box>
+                      <Box mt={5}>
+                        <AiOutlineRight size="10px" />
+                      </Box>
+                      <Box mt={1}>
+                        CLASSIC EYE-GLASSES
+                        <Text>
+                          Starting From ₹ <span>2500</span>
+                        </Text>
+                      </Box>
+                      <Box mt={5}>
+                        <AiOutlineRight size="10px" />
+                      </Box>
+                    </Flex>
+                  </NavLink>
+                </SimpleGrid>
+                <Flex justifyContent={"space-around"} gap={20}>
+                  <SimpleGrid gap={3}>
+                    <Text fontSize={"1rem"} color={"black"}>
+                      Our Top Picks
+                    </Text>
+                    <SimpleGrid gap={3}>
+                      <Text
+                        fontSize={"small"}
+                        color="gray"
+                        _hover={{ color: "black" }}
+                        transition="color 0.1s"
+                      >
+                        Small{" "}
+                      </Text>
+                      <Text
+                        fontSize={"small"}
+                        color="gray"
+                        _hover={{ color: "black" }}
+                        transition="color 0.1s"
+                      >
+                        {" "}
+                        Large
+                      </Text>
+                      <Text
+                        fontSize={"small"}
+                        color="gray"
+                        _hover={{ color: "black" }}
+                        transition="color 0.1s"
+                      >
+                        {" "}
+                        View all solutions
+                      </Text>
+                    </SimpleGrid>
+                  </SimpleGrid>
+
+                  <SimpleGrid gap={3}>
+                    <Text fontSize={"1rem"} color={"black"}></Text>
+                    <SimpleGrid gap={3}>
+                      <Text
+                        fontSize={"small"}
+                        color="gray"
+                        _hover={{ color: "black" }}
+                        transition="color 0.1s"
+                      >
+                        Small{" "}
+                      </Text>
+                      <Text
+                        fontSize={"small"}
+                        color="gray"
+                        _hover={{ color: "black" }}
+                        transition="color 0.1s"
+                      >
+                        {" "}
+                        Large
+                      </Text>
+                      <Text
+                        fontSize={"small"}
+                        color="gray"
+                        _hover={{ color: "black" }}
+                        transition="color 0.1s"
+                      >
+                        {" "}
+                        View all solutions
+                      </Text>
+                    </SimpleGrid>
+                  </SimpleGrid>
+
+                  <SimpleGrid gap={3}>
+                    <Text fontSize={"1rem"} color={"black"}>
+                      Frame Shape
+                    </Text>
+                    <SimpleGrid gap={3}>
+                      <Text
+                        fontSize={"small"}
+                        color="gray"
+                        _hover={{ color: "black" }}
+                        transition="color 0.1s"
+                      >
+                        Small{" "}
+                      </Text>
+                      <Text
+                        fontSize={"small"}
+                        color="gray"
+                        _hover={{ color: "black" }}
+                        transition="color 0.1s"
+                      >
+                        {" "}
+                        Large
+                      </Text>
+                      <Text
+                        fontSize={"small"}
+                        color="gray"
+                        _hover={{ color: "black" }}
+                        transition="color 0.1s"
+                      >
+                        {" "}
+                        View all solutions
+                      </Text>
+                    </SimpleGrid>
+                  </SimpleGrid>
+
+                  <SimpleGrid gap={3}>
+                    <Text fontSize={"1rem"} color={"black"}>
+                      Our Top Picks
+                    </Text>
+                    <SimpleGrid gap={3}>
+                      <Text
+                        fontSize={"small"}
+                        color="gray"
+                        _hover={{ color: "black" }}
+                        transition="color 0.1s"
+                      >
+                        Small{" "}
+                      </Text>
+                      <Text
+                        fontSize={"small"}
+                        color="gray"
+                        _hover={{ color: "black" }}
+                        transition="color 0.1s"
+                      >
+                        {" "}
+                        Large
+                      </Text>
+                      <Text
+                        fontSize={"small"}
+                        color="gray"
+                        _hover={{ color: "black" }}
+                        transition="color 0.1s"
+                      >
+                        {" "}
+                        View all solutions
+                      </Text>
+                    </SimpleGrid>
+                  </SimpleGrid>
+                </Flex>
+              </Flex>
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
+        
       </Flex>
     </Flex>
   );
