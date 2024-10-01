@@ -19,7 +19,7 @@ import {
 
 import SignUp1 from "./SignUp";
 import { useState } from "react";
-import { json, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const SignIn = () => {
   const toast = useToast()
   const { isOpen, onOpen, onClose } = useDisclosure()
