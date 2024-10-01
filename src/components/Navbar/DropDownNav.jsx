@@ -23,7 +23,7 @@ const DropDownNav = () => {
   const [hoverFour , setHoverFour] = useState(false)
   const[hoverFive, setHoverFive] = useState(false)
   
-  // const [hoverSix,setHoverSix] = useState(false)
+  const [hoverSix,setHoverSix] = useState(false)
   // const [hoverSeven, setHoverSeven] = useState(false)
   const isHoverOneTrue = () => {
     setHoverOne(true)
@@ -60,6 +60,14 @@ const DropDownNav = () => {
   const isHoverFiveFalse = () => {
     setHoverFive(false)
   }
+  const isHoverSixTrue = () => {
+    setHoverSix(true)
+  }
+
+  const isHoverSixFalse = () => {
+             setHoverSix(false)
+  }
+    
   return (
     <Flex>
       <Flex>
@@ -1124,7 +1132,91 @@ const DropDownNav = () => {
             </PopoverBody>
           </PopoverContent>
         </Popover>
-        
+        <Popover
+          isOpen={hoverSix}
+          onClose={() => setHoverSix(false)}
+          onOpen={() => setHoverSix(true)}
+        >
+          <PopoverTrigger>
+            <Button
+              onMouseEnter={isHoverSixTrue}
+              onMouseLeave={isHoverSixFalse}
+              pt={"5"}
+              pr={"1"}
+              pb={5}
+              bg={"#FBF9F7"}
+              _hover={{ borderBottom: "2px solid blue" }}
+              borderRadius={"none"}
+            >
+              {" "}
+              HOME EYE-TEST
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent
+            w={"1200px"}
+            h={"400px"}
+            onMouseEnter={isHoverSixTrue}
+            onMouseLeave={isHoverSixFalse}
+          >
+            <PopoverBody>
+              <Flex>
+                <Box>
+                  {" "}
+                  <Image
+                    h="100%"
+                    w="100%"
+                    src="https://static1.lenskart.com/media/desktop/img/HomeTryOut.png"
+                    alt="doc_img"
+                  ></Image>
+                </Box>
+                <Box>
+                  <Heading
+                    color="#000042"
+                    fontWeight=""
+                    fontSize="40px"
+                    fontFamily="sans-serif"
+                    textAlign="center"
+                    mt="10%"
+                  >
+                    Get your eyes checked at home
+                  </Heading>
+                  <Box
+                    color="gray"
+                    fontSize="larger"
+                    textAlign="center"
+                    mt="6%"
+                    _hover={{ color: "blue" }}
+                    transition="color 0.1s"
+                  >
+                    A certified refractionist will wisit you with
+                  </Box>
+                  <Box
+                    color="gray"
+                    fontSize="larger"
+                    textAlign="center"
+                    mt="1.5%"
+                    _hover={{ color: "blue" }}
+                    transition="color 0.1s"
+                  >
+                    latest eye testing machines & 100 trail frames
+                  </Box>
+                  <Button
+                    ml={"35%"}
+                    mt={5}
+                    textDecoration={"none"}
+                    p={7}
+                    border={"1px Solid blue"}
+                    borderRadius={"30px"}
+                    _hover={{ bg: "blue.900", color: "white" }}
+                  >
+                    {" "}
+                    Book appointment
+                  </Button>
+                </Box>
+              </Flex>
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
       </Flex>
     </Flex>
   );
