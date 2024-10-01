@@ -24,7 +24,7 @@ const DropDownNav = () => {
   const[hoverFive, setHoverFive] = useState(false)
   
   const [hoverSix,setHoverSix] = useState(false)
-  // const [hoverSeven, setHoverSeven] = useState(false)
+  const [hoverSeven, setHoverSeven] = useState(false)
   const isHoverOneTrue = () => {
     setHoverOne(true)
   }
@@ -67,10 +67,15 @@ const DropDownNav = () => {
   const isHoverSixFalse = () => {
              setHoverSix(false)
   }
-    
+  const isHoverSevenTrue = () => {
+      setHoverSeven(true)
+  }
+  const isHoverSevenFalse = () => {
+    setHoverSeven(false)
+  }
   return (
-    <Flex>
-      <Flex>
+    <Flex bg={"#FBF9F7"} justifyContent={"space-between"} zIndex={2}>
+      <Flex gap={1} bg={"#FBF9F7"} display={["none", "none", "block", "block"]}>
         <Popover
           isOpen={hoverOne}
           onClose={() => setHoverOne(false)}
@@ -1217,6 +1222,211 @@ const DropDownNav = () => {
             </PopoverBody>
           </PopoverContent>
         </Popover>
+
+        <Popover
+          isOpen={hoverSeven}
+          onClose={() => setHoverSeven(false)}
+          onOpen={() => setHoverSeven(true)}
+        >
+          <PopoverTrigger>
+            <Button
+              onMouseEnter={isHoverSevenTrue}
+              onMouseLeave={isHoverSevenFalse}
+              pt={"5"}
+              pr={"1"}
+              pb={5}
+              bg={"#FBF9F7"}
+              _hover={{ borderBottom: "2px solid blue" }}
+              borderRadius={"none"}
+            >
+              {" "}
+              STORE LOCATOR
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent
+            w={"1200px"}
+            h={"400px"}
+            onMouseEnter={isHoverSevenTrue}
+            onMouseLeave={isHoverSevenFalse}
+          >
+            <PopoverBody>
+              <Flex>
+                <Box>
+                  <Heading
+                    color="#000042"
+                    fontWeight=""
+                    fontSize="40px"
+                    fontFamily="sans-serif"
+                    textAlign="center"
+                    mt="15%"
+                  >
+                    Over 1100+ Lenskart Store
+                  </Heading>
+                  <Box
+                    color="gray"
+                    fontSize="larger"
+                    textAlign="center"
+                    mt="6%"
+                    _hover={{ color: "black" }}
+                    transition="color 0.1s"
+                  >
+                    Experience eyewear in a whole new way: Visit your nearest
+                    store
+                  </Box>
+                  <Box
+                    color="gray"
+                    fontSize="larger"
+                    textAlign="center"
+                    mt="1.5%"
+                    _hover={{ color: "black" }}
+                    transition="color 0.1s"
+                  >
+                    and treat yourself to 5000+ eyewear styles.
+                  </Box>
+                  <Button
+                    ml={"35%"}
+                    mt={5}
+                    textDecoration={"none"}
+                    p={7}
+                    border={"1px solid blue"}
+                    borderRadius={"30px"}
+                    _hover={{ bg: "blue.900", color: "white" }}
+                  >
+                    Locate a store
+                  </Button>
+                </Box>
+                <Box
+                  display="flex"
+                  justifyContent="space-around"
+                  alignItems="center"
+                  ml="20px"
+                  mr="20px"
+                  mt="10px"
+                >
+                  <Box>
+                    <NavLink>
+                      <Image
+                        h=""
+                        w=""
+                        src="https://static.lenskart.com/media/desktop/img/Delhi1.png"
+                        alt="Delhi"
+                      />
+                      <Text mt="-8px" ml="22px">
+                        Delhi
+                      </Text>
+                    </NavLink>
+                  </Box>
+                  <Box>
+                    <NavLink>
+                      <Image
+                        h=""
+                        w=""
+                        src="https://static.lenskart.com/media/desktop/img/Banglore1.png"
+                        alt="Banglore"
+                      />
+                      <Text mt="-8px" ml="15px">
+                        Banglore
+                      </Text>
+                    </NavLink>
+                  </Box>
+                  <Box>
+                    <NavLink>
+                      <Image
+                        h=""
+                        w=""
+                        src="https://static.lenskart.com/media/desktop/img/Mumbai1.png"
+                        alt="Mumbai"
+                      />
+                      <Text mt="-8px" ml="15px">
+                        Mumbai
+                      </Text>
+                    </NavLink>
+                  </Box>
+                  <Box>
+                    <NavLink>
+                      <Image
+                        h=""
+                        w=""
+                        src="https://static.lenskart.com/media/desktop/img/Ahmedabad1.png"
+                        alt="Ahemdabad"
+                      />
+                      <Text mt="-8px" ml="10px">
+                        Ahmedabad
+                      </Text>
+                    </NavLink>
+                  </Box>
+                  <Box>
+                    <NavLink>
+                      <Image
+                        h=""
+                        w=""
+                        src="https://static.lenskart.com/media/desktop/img/Chennai1.png"
+                        alt="Chennai"
+                      />
+                      <Text mt="-8px" ml="15px">
+                        Chennai
+                      </Text>
+                    </NavLink>
+                  </Box>
+                  <Box>
+                    <NavLink>
+                      <Image
+                        h=""
+                        w=""
+                        src="https://static.lenskart.com/media/desktop/img/Hyderabad1.png"
+                        alt="Hyderabad"
+                      />
+                      <Text mt="-8px" ml="15px">
+                        Hyderabad
+                      </Text>
+                    </NavLink>
+                  </Box>
+                  <Box>
+                    <NavLink>
+                      <Image
+                        h=""
+                        w=""
+                        src="https://static.lenskart.com/media/desktop/img/Cities1.png"
+                        alt="+100_cities"
+                      />
+                      <Text mt="-8px" ml="15px">
+                        +100 cities
+                      </Text>
+                    </NavLink>
+                  </Box>
+                </Box>
+              </Flex>
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
+      </Flex>
+
+      <Flex gap={2} mt={1}>
+        <Image
+          display={["none", "none", "block", "block"]}
+          h="37px"
+          w="100px"
+          borderRadius="5px"
+          src=" https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png"
+          alt="TRY ON 3D"
+        />
+        <Image
+          display={["none", "none", "block", "block"]}
+          h="37px"
+          w="100px"
+          borderRadius="5px"
+          src="https://static1.lenskart.com/media/desktop/img/Mar22/13-Mar/blulogo.png"
+          alt="BLU"
+        />
+
+        <Image
+          display={["none", "none", "block", "block"]}
+          h="37px"
+          w="100px"
+          borderRadius="5px"
+          src="https://static.lenskart.com/media/desktop/img/Feb22/18-Feb/goldlogo.jpg"
+          alt="GOLD"
+        />
       </Flex>
     </Flex>
   );
