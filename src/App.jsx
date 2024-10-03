@@ -11,6 +11,8 @@ import Kid from "./ProductTwo/Kid";
 import KidProduct from "./ProductOne/KidProduct";
 import Men from "./ProductTwo/Men";
 import MenProduct from "./ProductOne/MenProduct";
+import Women from "./ProductTwo/Women";
+import WomenProduct from "./ProductOne/WomenProduct";
 
 
 function App() {
@@ -28,7 +30,9 @@ function App() {
         <Route path="/kidProduct" element={<Kid />} />
         <Route path="/kidproduct/:id" element={<KidProduct />} />
         <Route path="/menproduct" element={<Men />} />
-        <Route path="/menproduct/:id" element ={<MenProduct/>} />
+        <Route path="/menproduct/:id" element={<MenProduct />} />
+        <Route path="/womenProduct" element={<Women />} />
+        <Route path="/womenProduct/:id" element = {<WomenProduct/>} />
       </Routes>
     </>
   );
