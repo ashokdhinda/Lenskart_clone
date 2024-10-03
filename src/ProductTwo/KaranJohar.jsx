@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Navbar from '../components/Navbar/Navbar';
 import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
 import Footer from '../components/Footer/Footer';
+import ProductList from '../ProductOne/ProductList';
 const KaranJohar = () => {
 
     const [sortedDate, setSortedData] = useState([])
@@ -73,6 +74,7 @@ const KaranJohar = () => {
         </Flex>
       </Flex>
       <Flex>
+        <ProductList/>
         <SimpleGrid
           gridTemplateColumns={"repeat(3,1fr)"}
           ml={10}
