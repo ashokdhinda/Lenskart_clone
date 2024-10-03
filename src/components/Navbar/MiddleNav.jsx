@@ -35,10 +35,11 @@ export function ScaleFadeEx() {
 }
 const MiddleNav = () => {
   return (
-    <Box display={'flex'}
-    justifyContent={'space-evenly'}
-    position={'relative'}
-    zIndex={2}
+    <Box
+      display={"flex"}
+      justifyContent={"space-evenly"}
+      position={"relative"}
+      zIndex={2}
     >
       <Box display={["none", "none", "block", "block"]}>
         <NavLink to="/">
@@ -137,14 +138,20 @@ const MiddleNav = () => {
         </NavLink>
       </Box>
 
-      <Box>
-        <Image
-          w="28px"
-          mt={1}
-          h="25px"
-          src=" https://static5.lenskart.com/media/uploads/shopping-bag-02.png"
-          alt="icon"
-        />
+      <Box display={["block", "block", "none", "none"]}>
+        <NavLink to={'/cart'}>
+          <Flex>
+
+        
+          <Image
+            w="28px"
+            mt={1}
+            h="28px"
+            src=" https://static5.lenskart.com/media/uploads/shopping-bag-02.png"
+            alt="icon"
+            />
+            </Flex>
+        </NavLink>
       </Box>
     </Box>
   );

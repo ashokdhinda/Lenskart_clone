@@ -1,7 +1,7 @@
 export const KaranaJoharProduct = [
   {
     "id": "1",
-    "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95/l/i/lenskart-air-la-e14832-c2-eyeglasses_g_2432_19_07_2022.jpg",
+    "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/Brown-Green-Full-Rim-Clubmaster--Vincent-Chase-Polarized-MIRAGE-VC-S10681/P-C5-Sunglasses_vincent-chase-vc-s10681-c5-sunglasses_sunglasses_sunglasses_m_7956_3_1_1_1_1_118_02_2022.jpg",
     "Header": "Lenskart Air",
     "Text": "Size: Wide. Color Flex",
     "price": "1700",
@@ -17,7 +17,7 @@ export const KaranaJoharProduct = [
   },
   {
     "id": "3",
-    "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95/l/i/black-full-rim-square-lenskart-studio-ls-e15666-c2-eyeglasses_csvfile-1705966162422-akaran33.png",
+    "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vintage-vc-s15746-c2-sunglasses_g_4774_13_07_2023.jpg",
     "Header": "Lenskart STUDIO",
     "Text": "Size: Medium. KJO",
     "price": "1700",
