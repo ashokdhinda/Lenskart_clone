@@ -9,6 +9,8 @@ import KaranJohar from "./ProductTwo/KaranJohar";
 import Cart from "./Pages/Cart/Cart";
 import Kid from "./ProductTwo/Kid";
 import KidProduct from "./ProductOne/KidProduct";
+import Men from "./ProductTwo/Men";
+import MenProduct from "./ProductOne/MenProduct";
 
 
 function App() {
@@ -24,7 +26,9 @@ function App() {
         <Route path="/karanjoharproduct/:id" element={<KaranJoharProducts />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/kidProduct" element={<Kid />} />
-        <Route path="/kidproduct/:id" element ={<KidProduct/>} />
+        <Route path="/kidproduct/:id" element={<KidProduct />} />
+        <Route path="/menproduct" element={<Men />} />
+        <Route path="/menproduct/:id" element ={<MenProduct/>} />
       </Routes>
     </>
   );
