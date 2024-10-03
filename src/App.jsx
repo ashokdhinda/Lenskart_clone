@@ -20,7 +20,9 @@ import PremiumEyeProduct from "./ProductOne/PremiumEyeProduct";
 import EyeGlassKId from "./ProductTwo/EyeGlassKId";
 import EyeGlassKidProduct from "./ProductOne/EyeGlassKidProduct";
 import MenSunglassess from "./ProductTwo/MenSunglassess";
-import MenSunglassessProduct from "./ProductOne/MenSunglassessProduct";
+import MenSunGlassessProductDetails from "./ProductOne/MenSunglassessProduct";
+import WomenSunglass from "./ProductTwo/WomenSunglass";
+import WomenSunglassProductDetialls from "./ProductOne/womenSunglassProductDetialls";
 
 
 function App() {
@@ -50,8 +52,13 @@ function App() {
           path="/kidsunglassessproduct/:id"
           element={<EyeGlassKidProduct />}
         />
-        <Route path="/mensunglassess" element={<MenSunglassess/>} />
-        <Route path="'/mensunglassessproduct/:id" element={<MenSunglassessProduct/>} />
+        <Route path="/mensunglassess" element={<MenSunglassess />} />
+        <Route
+          path="/mensunglassessproduct/:id"
+          element={<MenSunGlassessProductDetails />}
+        />
+        <Route path="/womensunglassess" element={<WomenSunglass />} />
+        <Route path="/womensunglassess/:id" element = {<WomenSunglassProductDetialls/>} />
       </Routes>
     </>
   );

@@ -1,39 +1,37 @@
+import React from 'react'
 import { useParams } from "react-router-dom";
 import { Box, Button, Heading, SimpleGrid, useToast } from "@chakra-ui/react";
-import { MenSunglassessProducts } from "../json/MenSunglassess";
-
+import { WomenSunglassessProducts } from '../json/WomenSunglassess';
 
 import { useEffect } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+const womenSunglassProductDetialls = () => {
+   const { id } = useParams()
+   const toast = useToast();
 
-const MenSunGlassessProductDetails = () => {
-  const { id } = useParams();
-  const toast = useToast();
-
-  const selectedItem = MenSunglassessProducts.find((item) => item.id === id);
-  const { image, Header, price, Text, footer } = selectedItem;
+   const selectedItem = WomenSunglassessProducts.find((item) => item.id === id);
+   const { image, Header, price, Text, footer } = selectedItem;
 
   useEffect(() => {
-    window.scroll({
-      top: 0,
-      behavior: "instant",
-    });
-  }, []);
+     window.scroll({
+       top: 0,
+       behavior: "instant",
+     });
+   }, []);
 
-  function handleCart() {
-    let arr = JSON.parse(localStorage.getItem("cart")) || [];
-    arr.push(selectedItem);
-    localStorage.setItem("cart", JSON.stringify(arr));
+   function handleCart() {
+     let arr = JSON.parse(localStorage.getItem("cart")) || [];
+     arr.push(selectedItem);
+     localStorage.setItem("cart", JSON.stringify(arr));
 
-    toast({
-      description: " Add To Cart!",
-      status: "success",
-      duration: 9000,
-      isClosable: true,
-    });
-  }
-
+     toast({
+       description: " Add To Cart!",
+       status: "success",
+       duration: 9000,
+       isClosable: true,
+     });
+   }
   return (
     <Box>
       <Navbar />
@@ -70,10 +68,9 @@ const MenSunGlassessProductDetails = () => {
           </Box>
         </SimpleGrid>
       </SimpleGrid>
-
       <Footer />
     </Box>
   );
-};
+}
 
-export default MenSunGlassessProductDetails;
+export default womenSunglassProductDetialls
