@@ -15,6 +15,8 @@ import Women from "./ProductTwo/Women";
 import WomenProduct from "./ProductOne/WomenProduct";
 import MouniRoy from "./ProductTwo/MouniRoy";
 import MouniRoyProduct from "./ProductOne/MouniRoyProduct";
+import PremiumEyeGlassess from "./ProductTwo/PremiumEyeGlassess";
+import PremiumEyeProduct from "./ProductOne/PremiumEyeProduct";
 
 
 function App() {
@@ -36,7 +38,9 @@ function App() {
         <Route path="/womenProduct" element={<Women />} />
         <Route path="/womenProduct/:id" element={<WomenProduct />} />
         <Route path="/mouniroyproduct" element={<MouniRoy />} />
-        <Route path="//mouniroyproduct/:id" element= {<MouniRoyProduct/>} />
+        <Route path="/mouniroyproduct/:id" element={<MouniRoyProduct />} />
+        <Route path="/premiumproduct" element={<PremiumEyeGlassess />} />
+        <Route path="/premiumproduct/:id" element={<PremiumEyeProduct />} />
       </Routes>
     </>
   );
