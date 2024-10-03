@@ -40,7 +40,10 @@ function App() {
         <Route path="/mouniroyproduct" element={<MouniRoy />} />
         <Route path="/mouniroyproduct/:id" element={<MouniRoyProduct />} />
         <Route path="/premiumproduct" element={<PremiumEyeGlassess />} />
-        <Route path="/premiumproduct/:id" element={<PremiumEyeProduct />} />
+        <Route
+          path="//premuimproduct/:id"
+          element={<PremiumEyeProduct />}
+        />
       </Routes>
     </>
   );
