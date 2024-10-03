@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar/Navbar';
 import ProductList from '../ProductOne/ProductList';
 import { Link } from "react-router-dom";
 import Footer from '../components/Footer/Footer';
+import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
 const Women = () => {
   const [sortedData,setSortedData] = useState([])
   const [sortBy,setSortBy] = useState('')
