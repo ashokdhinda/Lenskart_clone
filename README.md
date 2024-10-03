@@ -25,3 +25,24 @@ Chakra UI
 npm
 react icons
 AI
+
+###
+![Screenshot 2024-10-03 195715](https://github.com/user-attachments/assets/b6c63ba2-229f-445d-92fb-e0daa88c6c6e)
+
+
+![Screenshot 2024-10-03 195730](https://github.com/user-attachments/assets/f7ef638a-bc77-49d8-b8ed-aad3db1a1a63)
+
+
+![Screenshot 2024-10-03 195751](https://github.com/user-attachments/assets/cba5dc69-5837-4deb-8d57-e42b023dc149)
+![Screenshot 2024-10-03 195802](https://github.com/user-attachments/assets/7d0150ec-0ce3-4880-b4eb-45635dabac53)
+![Screenshot 2024-10-03 195815](https://github.com/user-attachments/assets/f49df12c-8b6a-4fbc-8cdb-b69e0c0f5839)
+![Screenshot 2024-10-03 195833](https://github.com/user-attachments/assets/7a63eec1-56b9-4d36-a92f-00c3adb3b305)
+![Screenshot 2024-10-03 195849](https://github.com/user-attachments/assets/2a89fa79-ceae-4ac5-90bb-fe89ae8d2400)
+![Screenshot 2024-10-03 195901](https://github.com/user-attachments/assets/0fb5888a-8228-46aa-a026-64be6abc078e)
+
+### Getting Started 🚀
+To run the Lenskart clone project locally, follow these steps:
+
+Clone the repository to your local machine.
+Install dependencies using npm.
+Start the development server.
