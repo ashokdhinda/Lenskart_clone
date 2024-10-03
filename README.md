@@ -17,3 +17,11 @@ This project is a replica of the Lenskart website, an e-commerce platform specia
 #### Sorting Functionality 🔄: Users can sort products by criteria such as price (Low to High, High to Low) for a more tailored shopping experience.
 
 #### Smooth Interface 🌟: The website offers a user-friendly and smooth interface, ensuring seamless interactions throughout.
+
+## Tech Stack 💻
+React and Vite
+JSON
+Chakra UI
+npm
+react icons
+AI
