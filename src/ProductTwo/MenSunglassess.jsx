@@ -3,32 +3,37 @@ import { Flex, Select, SimpleGrid, Switch, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { EyeGlassessProducts as data } from '../json/EyeGlassess';
+import { MenSunglassessProducts as data } from '../json/MenSunglassess';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import ProductList from '../ProductOne/ProductList';
-const EyeGlassKId = () => {
-       const [sortedData, setSortedData] = useState([]);
-       const [sortBy, setSortBy] = useState("");
+const MenSunglassess = () => {
+    const [sortedData, setSortedData] = useState([]);
+    const [sortBy, setSortBy] = useState("");
 
-       useEffect(() => {
-         window.scroll({
-           top: 0,
-           behavior: "instant",
-         });
-       }, []); 
- useEffect(() => {
-   if (sortBy === "desc") {
-     setSortedData([...data].sort((a, b) => Number(a.price) - Number(b.price)));
-   } else if (sortBy === "asc") {
-     setSortedData([...data].sort((a, b) => Number(b.price) - Number(a.price)));
-   } else {
-     setSortedData(data);
-   }
- }, [sortBy]);
-      const handleSorting = (e) => {
-        setSortBy(e.target.value);
-      };
+    useEffect(() => {
+      window.scroll({
+        top: 0,
+        behavior: "instant",
+      });
+    }, []);
+     useEffect(() => {
+       if (sortBy === "desc") {
+         setSortedData(
+           [...data].sort((a, b) => Number(a.price) - Number(b.price))
+         );
+       } else if (sortBy === "asc") {
+         setSortedData(
+           [...data].sort((a, b) => Number(b.price) - Number(a.price))
+         );
+       } else {
+         setSortedData(data);
+       }
+     }, [sortBy]);
+     const handleSorting = (e) => {
+       setSortBy(e.target.value);
+     };
+
   return (
     <>
       <Navbar />
@@ -72,7 +77,7 @@ const EyeGlassKId = () => {
         </Flex>
       </Flex>
       <Flex>
-     <ProductList/>
+        <ProductList/>
         <SimpleGrid
           gridTemplateColumns={"repeat(3,1fr)"}
           ml={10}
@@ -89,7 +94,7 @@ const EyeGlassKId = () => {
               boxShadow="xs"
               rounded="md"
             >
-              <Link to={`/kidsunglassessproduct/${ele.id}`}>
+              <Link to={`/mensunglassessproduct/${ele.id}`}>
                 <img src={ele.image} alt="" />
                 <Text mt={8} ml={10} fontWeight={700}>
                   ₹{ele.price}
@@ -135,4 +140,4 @@ const EyeGlassKId = () => {
   );
 }
 
-export default EyeGlassKId
+export default MenSunglassess
