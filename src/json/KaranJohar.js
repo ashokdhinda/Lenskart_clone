@@ -9,7 +9,7 @@ export const KaranaJoharProduct = [
   },
   {
     "id": "2",
-    "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95/j/i/cream-brown-wayfarer-john-jacobs-jj-tints-jj-s14443-c3-sunglasses_csvfile-1659103863508-g_5179.jpg",
+    "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-5158-p-xw-c149-sunglasses_csvfile-1705574803597-img_3488.jpg",
     "Header": "John Jacobs",
     "Text": "Size: Extra Wide. John Jacobs",
     "price": "5000",
@@ -25,7 +25,7 @@ export const KaranaJoharProduct = [
   },
   {
     "id": "4",
-    "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95/v/i/black-grey-full-rim-geometric-vincent-chase-polarized-havana-vc-s14676-c1-sunglasses_g_1461_6_13_22.jpg",
+    "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/gold-grey-tortoise-brown-full-rim-geometric-vincent-chase-statement-edit-vc-s16832-c1-polarized-sunglasses_img_1601_20_03_2024.jpg",
     "Header": "Vincent Chase Online",
     "Text": "Size: Wide. Havana",
     "price": "2000",
@@ -41,7 +41,7 @@ export const KaranaJoharProduct = [
   },
   {
     "id": "6",
-    "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95/j/i/black-full-rim-rectangle-john-jacobs-rich-acetate-jj-e14754-c1-eyeglasses_g_3351_7_29_22.jpg",
+    "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//j/i/black-full-rim-rectangle-john-jacobs-rich-acetate-jj-e14754-c1-eyeglasses_g_3351_7_29_22.jpg",
     "Header": "John Jacobs",
     "Text": "Size: Extra Wide. John Jacobs",
     "price": "5000",
@@ -65,7 +65,7 @@ export const KaranaJoharProduct = [
   },
   {
     "id": "9",
-    "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95/j/i/maroon-pink-full-rim-square-john-jacobs-rich-acetate-jj-e14758-c4-eyeglasses_g_3423_21_07_2022.jpg",
+    "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/pink-full-rim-square-john-jacobs-rich-acetate-jj-e14758-c3-eyeglasses_g_3410_21_07_2022.jpg",
     "Header": "John Jacobs Online",
     "Text": "Size: Extra Wide. John Jacobs",
     "price": "3500",
@@ -73,7 +73,7 @@ export const KaranaJoharProduct = [
   },
   {
     "id": "10",
-    "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95/j/i/brown-tortoise-full-rim-round-john-jacobs-rich-acetate-jj-e14504-c2-eyeglasses_g_0090_13_05_2022.jpg",
+    "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//j/i/grey-blue-transparent-full-rim-square-john-jacobs-kjo-x-jj-e15683-c3-eyeglasses_g_5586_03_10_23new.jpg",
     "Header": "John Jacobs Online",
     "Text": "Size: Wide. John Jacobs",
     "price": "3500",
