@@ -13,6 +13,8 @@ import Men from "./ProductTwo/Men";
 import MenProduct from "./ProductOne/MenProduct";
 import Women from "./ProductTwo/Women";
 import WomenProduct from "./ProductOne/WomenProduct";
+import MouniRoy from "./ProductTwo/MouniRoy";
+import MouniRoyProduct from "./ProductOne/MouniRoyProduct";
 
 
 function App() {
@@ -32,7 +34,9 @@ function App() {
         <Route path="/menproduct" element={<Men />} />
         <Route path="/menproduct/:id" element={<MenProduct />} />
         <Route path="/womenProduct" element={<Women />} />
-        <Route path="/womenProduct/:id" element = {<WomenProduct/>} />
+        <Route path="/womenProduct/:id" element={<WomenProduct />} />
+        <Route path="/mouniroyproduct" element={<MouniRoy />} />
+        <Route path="//mouniroyproduct/:id" element= {<MouniRoyProduct/>} />
       </Routes>
     </>
   );
