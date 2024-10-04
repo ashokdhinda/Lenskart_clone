@@ -20,10 +20,15 @@ This project is a replica of the Lenskart website, an e-commerce platform specia
 
 ## Tech Stack 💻
 React and Vite
+
 JSON
+
 Chakra UI
+
 npm
+
 react icons
+
 AI
 
 ###
